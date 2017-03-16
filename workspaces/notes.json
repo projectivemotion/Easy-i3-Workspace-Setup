@@ -1,0 +1,22 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 292,
+       "width": 484,
+       "x": 0,
+       "y": 0
+    },
+    "name": "My Favorite Terminal",
+    "percent": 1,
+    "swallows": [
+       {
+        "class": "^UXTerm$",
+        "instance": "^xterm$"
+       }
+    ],
+    "type": "con"
+}
+

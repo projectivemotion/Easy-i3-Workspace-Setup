@@ -1,0 +1,18 @@
+#!/bin/bash
+
+wspath="./workspaces"
+
+if [ -z "$2" ] ; then
+	echo "Args: workspace-number filename"
+	exit 1;
+fi
+
+i3-save-tree --workspace=$1 > "$wspath/$2.json"
+echo '#/bin/bash' > "$wspath/$2.sh"
+echo -e "\n\n# Launch Applications Here." >> "$wspath/$2.sh"
+
+chmod +x "$wspath/$2.sh"
+
+echo "Created $wspath/$2.sh and $wspath/$2.json"
+echo "Set launch applications in $2.sh"
+
